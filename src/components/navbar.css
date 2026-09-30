@@ -19,6 +19,7 @@ nav {
 	height: 100%;
 	display: flex;
 	align-items: center;
+	margin-right: 10%;
 }
 
 .logo-container img {
@@ -26,6 +27,7 @@ nav {
 	width: auto;
 }
 
+/*Navegacion*/
 .options-container {
 	flex: 1;
 
@@ -60,4 +62,87 @@ nav {
 
 .option:active {
 	color: var(--color-primary-dark);
+}
+
+/*Barra de busqueda*/
+.searchbar {
+	display: flex;
+	align-items: center;
+
+	width: 400px;
+	height: 42px;
+
+	background-color: var(--color-surface);
+	border: 1px solid var(--color-border);
+	border-radius: 24px;
+
+	padding: 0 5px 0 14px;
+	box-sizing: border-box;
+
+	transition:
+		border-color 0.25s ease,
+		box-shadow 0.25s ease;
+}
+
+.searchbar:focus-within {
+	border-color: var(--color-primary);
+	box-shadow: 0 0 0 3px rgb(136 66 162 / 15%);
+}
+
+.searchbar input {
+	flex: 1;
+	min-width: 0;
+
+	border: none;
+	outline: none;
+
+	padding: 8px 8px;
+
+	background: transparent;
+
+	color: var(--color-text);
+	font-family: var(--font-family);
+	font-size: 14px;
+}
+
+.searchbar input::placeholder {
+	color: var(--color-text-muted);
+}
+
+/* Botón de búsqueda */
+.searchbar button {
+	flex-shrink: 0;
+
+	width: 34px;
+	height: 34px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	border: none;
+	border-radius: 50%;
+
+	background-color: var(--color-primary);
+	color: var(--color-text);
+
+	cursor: pointer;
+
+	transition:
+		background-color 0.2s ease,
+		transform 0.2s ease;
+}
+
+.searchbar button:hover {
+	background-color: var(--color-primary-light);
+	transform: scale(1.05);
+}
+
+.searchbar button:active {
+	background-color: var(--color-primary-dark);
+	transform: scale(0.95);
+}
+
+.searchbar button i {
+	font-size: 14px;
 }

@@ -5,7 +5,13 @@ function Navbar() {
 		<>
 			<nav>
 				<div className="logo-container">
-					<img src="../public/logo.png" alt="logo" />
+					<img src="../logo.jpg" alt="logo" />
+				</div>
+				<div className="searchbar">
+					<input type="text" placeholder="Buscar..." />
+					<button>
+						<i className="fa-solid fa-magnifying-glass"></i>
+					</button>
 				</div>
 				<div className="options-container">
 					<ul className="options-list">
