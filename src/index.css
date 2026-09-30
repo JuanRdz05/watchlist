@@ -1,0 +1,37 @@
+:root {
+	/* Background */
+	--color-bg: #0d0b10;
+	--color-surface: #16121b;
+	--color-surface-hover: #211a28;
+
+	/* Page */
+	--color-primary: #8842a2;
+	--color-primary-light: #ac5a96;
+	--color-primary-dark: #4f1b83;
+
+	/* Accent */
+	--color-accent: #d2718b;
+
+	/* Text */
+	--color-text: #f5f3f7;
+	--color-text-muted: #aaa2af;
+
+	/* UI */
+	--color-border: #302735;
+
+	/* Status */
+	--color-success: #6bcb9a;
+	--color-error: #e57373;
+	--color-warning: #e5b86b;
+
+	/*Font*/
+	--font-family: "Poppins", sans-serif;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: var(--color-bg);
+	color: var(--color-text);
+	font-family: var(--font-family);
+}
